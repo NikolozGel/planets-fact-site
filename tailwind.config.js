@@ -6,6 +6,10 @@ export default {
       backgroundImage: {
         "bg-img": "url('/images/background-stars.svg')",
       },
+      fontFamily: {
+        antonio: ["Antonio", "sans-serif"],
+        spartan: ["Spartan", "sans-serif"],
+      },
     },
   },
   plugins: [],
