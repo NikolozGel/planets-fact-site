@@ -10,7 +10,11 @@ export default function Header() {
           <h1 className="text-white text-[28px] tracking-[-1.05px] font-antonio">
             THE PLANETS
           </h1>
-          <img src={hamburger} alt="hamburgerImg" />
+          <img
+            src={hamburger}
+            alt="hamburgerImg"
+            className="cursor-pointer"
+          />
         </div>
         <div className="mb-[64px]">
           <hr className="opacity-[0.2]" />
