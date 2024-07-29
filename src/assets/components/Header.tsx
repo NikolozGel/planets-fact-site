@@ -6,8 +6,8 @@ export default function Header() {
   return (
     <>
       <div className="md:mt-[16px]">
-        <div>
-          <div className="flex items-center justify-between pt-4 px-6 mb-4  md:justify-center">
+        <div className="xl:flex xl:items-center xl:justify-between">
+          <div className="flex items-center justify-between pt-4 px-6 mb-4  md:justify-between">
             <h1 className="text-white text-[28px] tracking-[-1.05px] font-antonio md:mb-[23px]">
               THE PLANETS
             </h1>
@@ -17,7 +17,7 @@ export default function Header() {
               className="cursor-pointer  md:hidden"
             />
           </div>
-          <div className="mb-[64px] md:mb-[130px]">
+          <div className="mb-[64px] md:mb-[130px] xl:mb-[0px]">
             <hr className="opacity-[0.2] md:hidden" />
             <div className="hidden md:flex justify-between mb-[20px] px-[51px]">
               <h3 className="text-white text-[11px] font-bold leading-[25px] tracking-[1px] opacity-[0.7] font-spartan">
@@ -57,10 +57,11 @@ export default function Header() {
               </p>
             </div>
 
-            <hr className="opacity-[0.2]" />
+            <hr className="opacity-[0.2] xl:hidden" />
           </div>
         </div>
 
+        <hr className="opacity-[0.2] hidden xl:block xl:mb-[130px]" />
         <div className="flex justify-center mb-[80px] md:mb-[115px]">
           <img src={earth} alt="" className="h-[173px] w-[173px]" />
         </div>
