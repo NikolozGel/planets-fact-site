@@ -4,7 +4,9 @@ import Header from "./assets/components/Header";
 function App() {
   return (
     <>
-      <Header />
+      <div className="bg-bg-img bg-cover bg-center bg-[#070724]">
+        <Header />
+      </div>
     </>
   );
 }
