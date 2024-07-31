@@ -4,21 +4,6 @@ import source from "/images/icon-source.svg";
 export default function Planets() {
   return (
     <div>
-      <div className="mb-[50px]">
-        <hr className="opacity-[0.2]" />
-        <div className="flex justify-between py-[20px] px-[24px]">
-          <p className="text-white text-[11px] font-bold tracking-[1.929px] w-[80px] opacity-[0.5]">
-            OVERVIEW
-          </p>
-          <p className="text-white  text-[11px] font-bold tracking-[1.929px] w-[80px] opacity-[0.5]">
-            STRUCTURE
-          </p>
-          <p className="text-white  text-[11px] font-bold tracking-[1.929px] w-[59px] opacity-[0.5]">
-            SURFACE
-          </p>
-        </div>
-        <hr className="opacity-[0.2]" />
-      </div>
       <div className="flex justify-center mb-[50px]">
         <img src={earth} alt="earthImg" className="w-[111px]" />
       </div>
