@@ -3,17 +3,11 @@ export default function PlanetsMenu() {
     <div>
       <div>
         <ul>
-          <div>
-            <li>MERCURTY</li>
+          <div className="flex items-center pl-[24px]">
+            <div className="w-[20px] h-[20px] rounded-full bg-[#DEF4FC]"></div>
+            <li className="text-white ml-[25px]">MERCURTY</li>
+            <hr />
           </div>
-          <li>MERCURTY</li>
-          <li>MERCURTY</li>
-          <li>MERCURTY</li>
-          <li>MERCURTY</li>
-          <li>MERCURTY</li>
-          <li>MERCURTY</li>
-          <li>MERCURTY</li>
-          <li>MERCURTY</li>
         </ul>
       </div>
     </div>

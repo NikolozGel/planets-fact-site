@@ -4,7 +4,7 @@ import { useState } from "react";
 import PlanetsMenu from "./PlanetsMenu";
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState<boolean>(true);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
