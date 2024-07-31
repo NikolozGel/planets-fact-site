@@ -3,7 +3,7 @@ export default function PlanetsMenu() {
   return (
     <div className="h-[100%]">
       <div className="px-[24px] relative">
-        <ul>
+        <ul className="mt-[44px]">
           <div className="flex items-center  mb-4">
             <div className="w-[20px] h-[20px] rounded-full bg-[#DEF4FC]"></div>
             <li
