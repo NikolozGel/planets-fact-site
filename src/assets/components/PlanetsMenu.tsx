@@ -1,7 +1,7 @@
 import chevron from "/images/icon-chevron.svg";
 export default function PlanetsMenu() {
   return (
-    <div>
+    <div className="h-[100%]">
       <div className="px-[24px] relative">
         <ul>
           <div className="flex items-center  mb-4">
