@@ -19,7 +19,7 @@ export default function Header() {
         <img
           src={hamburger}
           alt="hamburgerImg"
-          className="cursor-pointer"
+          className="cursor-pointer  sm:hidden"
           style={{ opacity: isOpen ? "1" : "0.2487" }}
           onClick={toggleMenu}
         />
@@ -41,22 +41,15 @@ export default function Header() {
         <hr className="opacity-[0.2]" />
       </div>
 
-      <div className="relative">
-        <div
-          className={`transition-opacity duration-500 ease-in-out ${
-            isOpen ? "opacity-100" : "opacity-0"
-          } absolute top-0 left-0 w-full`}
-        >
+      {isOpen ? (
+        <div>
           <Planets />
         </div>
-        <div
-          className={`transition-opacity duration-500 ease-in-out ${
-            isOpen ? "opacity-0" : "opacity-100"
-          } absolute top-0 left-0 w-full`}
-        >
+      ) : (
+        <div className="sm:hidden">
           <PlanetsMenu />
         </div>
-      </div>
+      )}
     </div>
   );
 }
