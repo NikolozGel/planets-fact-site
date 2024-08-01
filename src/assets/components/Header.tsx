@@ -14,7 +14,7 @@ export default function Header() {
     <div>
       <div className="lg:flex lg:justify-between lg:items-center">
         <div className="py-[16px] px-[24px] flex items-center justify-between md:justify-center">
-          <h1 className="text-white font-antonio text-[28px] tracking-[-1.05px] md:mb-[20px]">
+          <h1 className="text-white font-antonio text-[28px] tracking-[-1.05px] md:mb-[20px] lg:mb-[0px]">
             THE PLANETS
           </h1>
 
@@ -29,7 +29,7 @@ export default function Header() {
 
         <div>
           <div>
-            <div className="hidden md:flex justify-evenly mb-[27px]">
+            <div className="hidden md:flex justify-evenly mb-[27px] lg:mb-[0px]">
               <div className="text-white opacity-[0.6] lg:mr-[33px]">
                 Mercury
               </div>
