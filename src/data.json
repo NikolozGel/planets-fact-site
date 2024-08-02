@@ -20,9 +20,24 @@
     "images": {
       "planet": "./assets/planet-mercury.svg",
       "internal": "./assets/planet-mercury-internal.svg",
-      "geology": "./assets/geology-mercury.png"
+      "geology": "./assets/geology-mercury.png",
+      "sizes": {
+        "mobile": {
+          "width": "10rem",
+          "heigth": "10rem"
+        },
+        "tablet": {
+          "width": "10rem",
+          "heigth": "10rem"
+        },
+        "desktop": {
+          "width": "10rem",
+          "heigth": "10rem"
+        }
+      }
     }
   },
+  
   {
     "name": "Venus",
     "overview": {

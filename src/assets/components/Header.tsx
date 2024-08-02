@@ -1,7 +1,17 @@
 import hamburger from "/images/icon-hamburger.svg";
-import Planets from "./Planets";
+import Planet from "./Planet";
 import { useState } from "react";
 import PlanetsMenu from "./PlanetsMenu";
+const navigation: string[] = [
+  "Mercury",
+  "Venus",
+  "Earth",
+  "Mars",
+  "Jupiter",
+  "Saturn",
+  "Uranus",
+  "Neptun",
+];
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(true);
@@ -75,7 +85,7 @@ export default function Header() {
 
       {isOpen ? (
         <div>
-          <Planets />
+          <Planet />
         </div>
       ) : (
         <div>
