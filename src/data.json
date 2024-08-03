@@ -23,16 +23,16 @@
       "geology": "./assets/geology-mercury.png",
       "sizes": {
         "mobile": {
-          "width": "10rem",
-          "heigth": "10rem"
+          "width": "111px",
+          "heigth": "111px"
         },
         "tablet": {
-          "width": "10rem",
-          "heigth": "10rem"
+          "width": "184px",
+          "heigth": "184px"
         },
         "desktop": {
-          "width": "10rem",
-          "heigth": "10rem"
+          "width": "290px",
+          "heigth": "290px"
         }
       }
     }
@@ -60,6 +60,20 @@
       "planet": "./assets/planet-venus.svg",
       "internal": "./assets/planet-venus-internal.svg",
       "geology": "./assets/geology-venus.png"
+    },
+    "sizes": {
+      "mobile": {
+        "width": "154px",
+        "heigth": "154px"
+      },
+      "tablet": {
+        "width": "253px",
+        "heigth": "253px"
+      },
+      "desktop": {
+        "width": "400px",
+        "heigth": "400px"
+      }
     }
   },
   {
@@ -84,6 +98,20 @@
       "planet": "./assets/planet-earth.svg",
       "internal": "./assets/planet-earth-internal.svg",
       "geology": "./assets/geology-earth.png"
+    },
+    "sizes": {
+      "mobile": {
+        "width": "173px",
+        "heigth": "173px"
+      },
+      "tablet": {
+        "width": "285px",
+        "heigth": "285px"
+      },
+      "desktop": {
+        "width": "450px",
+        "heigth": "450px"
+      }
     }
   },
   {
@@ -108,6 +136,20 @@
       "planet": "./assets/planet-mars.svg",
       "internal": "./assets/planet-mars-internal.svg",
       "geology": "./assets/geology-mars.png"
+    },
+    "sizes": {
+      "mobile": {
+        "width": "129px",
+        "heigth": "129px"
+      },
+      "tablet": {
+        "width": "213px",
+        "heigth": "213px"
+      },
+      "desktop": {
+        "width": "336px",
+        "heigth": "336px"
+      }
     }
   },
   {
@@ -132,6 +174,20 @@
       "planet": "./assets/planet-jupiter.svg",
       "internal": "./assets/planet-jupiter-internal.svg",
       "geology": "./assets/geology-jupiter.png"
+    },
+    "sizes": {
+      "mobile": {
+        "width": "224px",
+        "heigth": "224px"
+      },
+      "tablet": {
+        "width": "369px",
+        "heigth": "369px"
+      },
+      "desktop": {
+        "width": "582px",
+        "heigth": "582px"
+      }
     }
   },
   {
@@ -156,6 +212,20 @@
       "planet": "./assets/planet-saturn.svg",
       "internal": "./assets/planet-saturn-internal.svg",
       "geology": "./assets/geology-saturn.png"
+    },
+    "sizes": {
+      "mobile": {
+        "width": "256px",
+        "heigth": "256px"
+      },
+      "tablet": {
+        "width": "263px",
+        "heigth": "263px"
+      },
+      "desktop": {
+        "width": "416px",
+        "heigth": "416px"
+      }
     }
   },
   {
@@ -180,6 +250,20 @@
       "planet": "./assets/planet-uranus.svg",
       "internal": "./assets/planet-uranus-internal.svg",
       "geology": "./assets/geology-uranus.png"
+    },
+    "sizes": {
+      "mobile": {
+        "width": "176px",
+        "heigth": "176px"
+      },
+      "tablet": {
+        "width": "290x",
+        "heigth": "290px"
+      },
+      "desktop": {
+        "width": "458px",
+        "heigth": "458px"
+      }
     }
   },
   {
@@ -204,6 +288,20 @@
       "planet": "./assets/planet-neptune.svg",
       "internal": "./assets/planet-neptune-internal.svg",
       "geology": "./assets/geology-neptune.png"
+    },
+    "sizes": {
+      "mobile": {
+        "width": "173px",
+        "heigth": "173px"
+      },
+      "tablet": {
+        "width": "285px",
+        "heigth": "285px"
+      },
+      "desktop": {
+        "width": "450px",
+        "heigth": "450px"
+      }
     }
   }
 ]

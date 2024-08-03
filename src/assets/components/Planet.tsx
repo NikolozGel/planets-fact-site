@@ -1,7 +1,13 @@
 import earth from "/images/planet-venus.svg";
 import source from "/images/icon-source.svg";
+import { useParams } from "react-router-dom";
+import data from "../../data.json";
 
 export default function Planets() {
+  const { planetName } = useParams();
+  const planet = data.find((planet) => planet.name === planetName);
+
+  console.log(planet);
   return (
     <div>
       <div className="lg:flex lg:justify-between lg:items-center lg:pl-[300px] lg:pr-[45px]">
@@ -16,15 +22,11 @@ export default function Planets() {
           <div className="flex flex-col items-center mb-[32px] md:mr-[69px] lg:mt-[50px]">
             <div className="text-center md:text-left lg:ml-[136px]">
               <h1 className="text-white text-[40px] font-antonio mb-4 md:text-left lg:text-[80px] ">
-                MERCURY
+                {planet?.name}
               </h1>
 
               <p className="text-white w-[327px] text-center text-[13px] opacity-[0.6] leading-[22px] md:text-left lg:text-[14px] lg:w-[350px]">
-                Mercury is the smallest planet in the Solar System and
-                the closest to the Sun. Its orbit around the Sun takes
-                87.97 Earth days, the shortest of all the Sun's
-                planets. Mercury is one of four terrestrial planets in
-                the Solar System, and is a rocky body like Earth.
+                {planet?.structure.content}
               </p>
 
               <div className="mt-4 flex items-center justify-center md:justify-start">
@@ -39,15 +41,15 @@ export default function Planets() {
             </div>
           </div>
           <div className="hidden md:block lg:mb-[80px]">
-            <div className="w-[281px] h-[40px] border flex items-center mb-4 md:hover:bg-[#EDA249] cursor-pointer hover:border-none">
+            <div className="w-[281px] h-[40px] border flex items-center mb-4 md:hover:bg-[#D8D8D8] cursor-pointer hover:border-none">
               <p className="text-white md:ml-[20px]">01</p>
               <p className="text-white md:ml-[17px]">OVERVIEW</p>
             </div>
-            <div className="w-[281px] h-[40px] border flex items-center mb-4 md:hover:bg-[#EDA249] cursor-pointer hover:border-none">
+            <div className="w-[281px] h-[40px] border flex items-center mb-4 md:hover:bg-[#D8D8D8] cursor-pointer hover:border-none">
               <p className="text-white md:ml-[20px]">01</p>
               <p className="text-white  md:ml-[17px]">OVERVIEW</p>
             </div>
-            <div className="w-[281px] h-[40px] border flex items-center md:hover:bg-[#EDA249] cursor-pointer hover:border-none">
+            <div className="w-[281px] h-[40px] border flex items-center md:hover:bg-[#D8D8D8] cursor-pointer hover:border-none">
               <p className="text-white md:ml-[20px]">01</p>
               <p className="text-white  md:ml-[17px]">OVERVIEW</p>
             </div>

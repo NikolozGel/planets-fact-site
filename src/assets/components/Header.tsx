@@ -2,6 +2,8 @@ import hamburger from "/images/icon-hamburger.svg";
 import Planet from "./Planet";
 import { useState } from "react";
 import PlanetsMenu from "./PlanetsMenu";
+import { Link } from "react-router-dom";
+
 const navigation: string[] = [
   "Mercury",
   "Venus",
@@ -10,7 +12,7 @@ const navigation: string[] = [
   "Jupiter",
   "Saturn",
   "Uranus",
-  "Neptun",
+  "Neptune",
 ];
 
 export default function Header() {
@@ -39,32 +41,18 @@ export default function Header() {
 
         <div>
           <div>
-            <div className="hidden md:flex justify-evenly mb-[27px] lg:mb-[0px]">
-              <div className="text-white opacity-[0.6] lg:mr-[33px]">
-                Mercury
-              </div>
-              <div className="text-white opacity-[0.6] lg:mr-[33px]">
-                Venus
-              </div>
-              <div className="text-white opacity-[0.6] lg:mr-[33px]">
-                Earth
-              </div>
-              <div className="text-white opacity-[0.6] lg:mr-[33px]">
-                Mars
-              </div>
-              <div className="text-white opacity-[0.6] lg:mr-[33px]">
-                Jupiter
-              </div>
-              <div className="text-white opacity-[0.6] lg:mr-[33px]">
-                Saturn
-              </div>
-              <div className="text-white opacity-[0.6] lg:mr-[33px]">
-                Uranus
-              </div>
-              <div className="text-white opacity-[0.6] lg:mr-[41px]">
-                Neptune
-              </div>
-            </div>
+            <ul className="hidden md:flex justify-evenly mb-[27px] lg:mb-[0px]">
+              {navigation.map((planet) => {
+                return (
+                  <li
+                    key={planet}
+                    className="text-white opacity-[0.6] lg:mr-[33px]"
+                  >
+                    <Link to={planet}>{planet}</Link>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
         </div>
       </div>
