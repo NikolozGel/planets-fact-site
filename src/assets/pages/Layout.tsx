@@ -1,4 +1,4 @@
-import { Outlet, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import { useEffect } from "react";
 
@@ -16,6 +16,7 @@ const navigationLinks: string[] = [
 export default function Layout() {
   const location = useLocation();
   const pathname = location.pathname;
+
   const navigate = useNavigate();
   useEffect(() => {
     if (navigationLinks.includes(pathname)) {
@@ -28,7 +29,6 @@ export default function Layout() {
     <>
       <div className="bg-bg-img bg-cover bg-center bg-[#070724] overflow-x-hidden  h-screen">
         <Header />
-        <Outlet />
       </div>
     </>
   );

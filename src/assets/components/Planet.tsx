@@ -1,5 +1,4 @@
-import earth from "/images/planet-venus.svg";
-import source from "/images/icon-source.svg";
+import source from "/assets/icon-source.svg";
 import { useParams } from "react-router-dom";
 import data from "../../data.json";
 
@@ -7,25 +6,30 @@ export default function Planets() {
   const { planetName } = useParams();
   const planet = data.find((planet) => planet.name === planetName);
 
-  console.log(planet);
   return (
     <div>
       <div className="lg:flex lg:justify-between lg:items-center lg:pl-[300px] lg:pr-[45px]">
         <div className="flex justify-center mb-[50px] mt-[70px] md:mt-[90px]">
           <img
-            src={earth}
+            src={planet?.images.planet}
             alt="earthImg"
             className="w-[111px] md:mb-[100px]"
+            style={{
+              width: planet?.images.sizes?.mobile.width,
+            }}
           />
         </div>
         <div className="md:flex items-center justify-center lg:flex-col">
           <div className="flex flex-col items-center mb-[32px] md:mr-[69px] lg:mt-[50px]">
             <div className="text-center md:text-left lg:ml-[136px]">
-              <h1 className="text-white text-[40px] font-antonio mb-4 md:text-left lg:text-[80px] ">
+              <h1
+                className="text-white text-[40px] font-antonio mb-4 md:text-left lg:text-[80px]
+              "
+              >
                 {planet?.name}
               </h1>
 
-              <p className="text-white w-[327px] text-center text-[13px] opacity-[0.6] leading-[22px] md:text-left lg:text-[14px] lg:w-[350px]">
+              <p className="text-white w-[327px] text-center text-[13px] opacity-[0.6] leading-[22px] md:text-left lg:text-[14px] lg:w-[340px]">
                 {planet?.structure.content}
               </p>
 
@@ -64,7 +68,7 @@ export default function Planets() {
           </p>
           <p className="text-white">
             <span className="text-white text-[20px] font-antonio lg:text-[40px]">
-              58.6 days
+              {planet?.rotation}
             </span>
           </p>
         </div>
@@ -74,7 +78,7 @@ export default function Planets() {
           </p>
           <p className="text-white">
             <span className="text-white text-[20px] font-antonio  lg:text-[40px]">
-              58.6 days
+              {planet?.revolution}
             </span>
           </p>
         </div>
@@ -84,7 +88,7 @@ export default function Planets() {
           </p>
           <p className="text-white">
             <span className="text-white text-[20px] font-antonio  lg:text-[40px]">
-              58.6 days
+              {planet?.radius}
             </span>
           </p>
         </div>
@@ -94,7 +98,7 @@ export default function Planets() {
           </p>
           <p className="text-white">
             <span className="text-white text-[20px] font-antonio  lg:text-[40px]">
-              58.6 days
+              {planet?.temperature}
             </span>
           </p>
         </div>

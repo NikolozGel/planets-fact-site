@@ -1,4 +1,4 @@
-import hamburger from "/images/icon-hamburger.svg";
+import hamburger from "/assets/icon-hamburger.svg";
 import Planet from "./Planet";
 import { useState } from "react";
 import PlanetsMenu from "./PlanetsMenu";

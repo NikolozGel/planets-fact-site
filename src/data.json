@@ -21,6 +21,10 @@
       "planet": "./assets/planet-mercury.svg",
       "internal": "./assets/planet-mercury-internal.svg",
       "geology": "./assets/geology-mercury.png",
+    "backgroundColor":{
+      "color":"#DEF4FC"
+    },
+      
       "sizes": {
         "mobile": {
           "width": "111px",
@@ -35,6 +39,7 @@
           "heigth": "290px"
         }
       }
+
     }
   },
   
@@ -60,6 +65,9 @@
       "planet": "./assets/planet-venus.svg",
       "internal": "./assets/planet-venus-internal.svg",
       "geology": "./assets/geology-venus.png"
+    },
+    "backgroundColor": {
+      "color" : "#F7CC7F"
     },
     "sizes": {
       "mobile": {
@@ -99,6 +107,9 @@
       "internal": "./assets/planet-earth-internal.svg",
       "geology": "./assets/geology-earth.png"
     },
+    "backgroundColor": {
+      "color" : "#545BFE"
+    },
     "sizes": {
       "mobile": {
         "width": "173px",
@@ -136,6 +147,9 @@
       "planet": "./assets/planet-mars.svg",
       "internal": "./assets/planet-mars-internal.svg",
       "geology": "./assets/geology-mars.png"
+    },
+    "backgroundColor": {
+      "color" : "#FF6A45"
     },
     "sizes": {
       "mobile": {
@@ -175,6 +189,9 @@
       "internal": "./assets/planet-jupiter-internal.svg",
       "geology": "./assets/geology-jupiter.png"
     },
+    "backgroundColor": {
+      "color" : "#ECAD7A"
+    },
     "sizes": {
       "mobile": {
         "width": "224px",
@@ -212,6 +229,9 @@
       "planet": "./assets/planet-saturn.svg",
       "internal": "./assets/planet-saturn-internal.svg",
       "geology": "./assets/geology-saturn.png"
+    },
+    "backgroundColor": {
+      "color" : "#FCCB6B"
     },
     "sizes": {
       "mobile": {
@@ -251,6 +271,9 @@
       "internal": "./assets/planet-uranus-internal.svg",
       "geology": "./assets/geology-uranus.png"
     },
+    "backgroundColor": {
+      "color" : "#65F0D5"
+    },
     "sizes": {
       "mobile": {
         "width": "176px",
@@ -288,6 +311,9 @@
       "planet": "./assets/planet-neptune.svg",
       "internal": "./assets/planet-neptune-internal.svg",
       "geology": "./assets/geology-neptune.png"
+    },
+    "backgroundColor": {
+      "color" : "#497EFA"
     },
     "sizes": {
       "mobile": {
