@@ -1,6 +1,6 @@
 import chevron from "/assets/icon-chevron.svg";
 import { Link } from "react-router-dom";
-import data from "../../data.json";
+// import data from "../../data.json";
 
 const navigation: string[] = [
   "Mercury",
